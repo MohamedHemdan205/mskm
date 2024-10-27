@@ -1,0 +1,205 @@
+/*----------- Start Globel ----------*/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.my-spacing{
+    letter-spacing: .3rem;
+}
+
+/*----------- End Globel ----------*/
+/*========== End navbar =========== */
+nav .my-spacing{
+    letter-spacing: .4rem;
+    font-weight: 800;
+}
+/*========== Start Header =========== */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.495) , rgba(0, 0, 0, 0.495)) , url(../imges/15b-scaled.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100dvh;
+    color: #fff;
+}
+.auto-type{
+    color: yellowgreen;
+}
+.after{
+    position: relative;
+}
+.after::after{
+    content: '';
+    width: 10%;
+    height: 4px;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*========== End Header =========== */
+
+/* ========== Start Hero =========== */
+
+/*========== End Hero =========== */
+/*========== Start About =========== */
+#about .my-after{
+    position: relative;
+}
+#about .my-after::after{
+    content: '';
+    width: 19%;
+    height: 3px;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: -40%;
+    left: 0%;
+}
+/*========== End About =========== */
+/*========== Start Services =========== */
+#services .my-icon{
+    outline: 10px solid #0078FF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .8s , background-color .8s ,outline .8s;
+}
+#services .content:hover .my-icon{
+    color: #fff;
+    background-color: #0078FF;
+    outline-color: #0077ff8e;
+}
+/*========== End Services =========== */
+/*========== Start Portfolio =========== */
+#portfolio {
+    background-image:linear-gradient(#0077ffcb , #0077ffbb) , url(../imges/post-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10rem;
+    margin-bottom: 3rem;
+    
+}
+#portfolio .my-icon{
+    outline: 10px solid #CDE1F8;
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+/*========== End Portfolio =========== */
+/*========== Start Blog =========== */
+#blog .content-blog img{
+    transition: scale .8s;
+}
+#blog .content-blog:hover img{
+    scale: 1.3;
+}
+#blog .content-blog .card-body .text p{
+    font-size: .9rem;
+}
+/*========== End Blog =========== */
+/*============ Testimonials Section========= */
+#testimonials{
+    background-image:linear-gradient(#0077ffcb , #0077ffbb) , url(../imges/overlay-bg.jpg);
+    padding: 7rem;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#testimonials .chef{
+    width: 70%;
+    margin: auto;
+}
+#testimonials .imge .chef-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.carousel-indicators [data-bs-target],
+.carousel-indicators [data-bs-target] img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-indent: unset;
+}
+/*----------------- Get -------------- */
+section .my-position{
+    position: relative;
+}
+section .my-position::after{
+    content: 'TRAVEL';
+    position: absolute;
+    top: -17px;
+    right: 50%;
+    color: #fff;
+    font-size: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50%);
+    width: 20%;
+    height: 2rem;
+    background-color: #0078FF;
+    border-radius: 7px;
+}
+section .color a{
+    color: #000;
+    transition: color .8s;
+}
+section .color a:hover{
+    color: #0078FF;
+}
+section .imgess img{
+    width: 19%;
+    border-radius: 50%;
+}
+section .imgess{
+    width: 47%;
+}
+/*------------ button------------- */
+#button{
+    background-image:linear-gradient( #0077ffcb , #0077ffcb) , url(../imges/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+.py{
+    padding-block: 9%;
+}
+.py .text{
+    position: relative;
+}
+.py .text::after{
+    content: '';
+    width: 6rem;
+    height: 3.5px;
+    position: absolute;
+    bottom: calc(0% - 15px);
+    left: 0;
+    background-color: #0078FF;
+}
+
+
+
